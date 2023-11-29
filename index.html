@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlissFeed</title>
+    <link rel="icon" href="img/preguica_branca.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white flex items-center justify-between p-4 topbar">
+      <div class="flex items-center space-x-2">
+        <img
+          src="img/preguica_branca.png"
+          alt="Preguiça Logo"
+          class="w-12 h-12"
+        />
+        <h1 class="text-2xl font-semibold text-gray-800">BlissFeed</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="download-button rounded-full p-2">
+          <a href="#" class="text-sm text-white">Baixe aqui</a>
+        </div>
+        <a href="#" class="text-sm text-gray-800 mr-4">Sobre Nós</a>
+        <a href="#" class="text-sm text-gray-800">Suporte</a>
+      </div>
+    </header>
+    <script>
+      // Adicione um evento de rolagem para a janela
+      window.addEventListener("scroll", function () {
+        // Obtenha a posição de rolagem da janela
+        var scrollPosition = window.scrollY;
+
+        // Se a posição de rolagem for maior que 0, adicione a classe 'scroll' à topbar
+        if (scrollPosition > 0) {
+          document.querySelector(".topbar").classList.add("scroll");
+        } else {
+          // Caso contrário, remova a classe 'scroll'
+          document.querySelector(".topbar").classList.remove("scroll");
+        }
+      });
+    </script>
+    <main class="w-[95%] min-h-screen max-w-screen-2xl mx-auto mt-12">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="w-1/2 pr-8">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            O apoio diário para o seu
+          </h2>
+          <h3 class="text-4xl font-bold text-purple-600 mb-4">
+            Bem-Estar Mental
+          </h3>
+          <p class="text-lg text-gray-600 mb-4">
+            Viva mais feliz e melhore a sua saúde mental com nosso programa de
+            meditação de atenção plena. Reduza o estresse, alivie a ansiedade e
+            durma melhor.
+          </p>
+          <button class="bg-purple-600 text-white py-2 px-4 rounded-full mb-4">
+            Junte-se a nós
+          </button>
+          <p class="text-sm text-gray-800">
+            Mais de 0 pessoas começaram a testar BlissFeed nos últimos 14 dias
+          </p>
+        </div>
+        <div class="w-1/2">
+          <img
+            src="img/imagem-celular.png"
+            alt="Imagem Celular"
+            class="w-full h-auto rounded"
+          />
+        </div>
+      </div>
+
+      <!-- Novo Container -->
+      <div class="text-center mt-8">
+        <h2 class="text-3xl font-bold text-gray-800">É fácil começar</h2>
+        <p class="text-sm text-purple-600 mt-2">Como funciona</p>
+        <div class="flex justify-center mt-4 space-x-5">
+          <div class="flex flex-col items-center">
+            <img
+              src="img/formulario.png"
+              alt="Imagem 1"
+              class="w-custom h-custom rounded mb-2"
+            />
+            <p class="text-sm">
+              Faça a sua avaliação emocional<br />
+              grátis
+            </p>
+          </div>
+          <div class="flex flex-col items-center mt-11">
+            <img
+              src="img/seta.png"
+              alt="Imagem 2"
+              class="w-20 h-8 rounded mb-2"
+            />
+            <!-- Não há texto abaixo da Imagem 2 -->
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="img/prancheta.png"
+              alt="Imagem 3"
+              class="w-custom h-custom rounded mb-2"
+            />
+            <p class="text-sm">
+              Baixe o app e comece o seu<br />programa personalizado
+            </p>
+          </div>
+          <div class="flex flex-col items-center mt-11">
+            <img
+              src="img/seta.png"
+              alt="Imagem 4"
+              class="w-20 h-8 rounded mb-2"
+            />
+            <!-- Não há texto abaixo da Imagem 4 -->
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="img/conversa.png"
+              alt="Imagem 5"
+              class="w-custom h-custom rounded mb-2"
+            />
+            <p class="text-sm">
+              Encontre paz e relaxamento<br />ouvindo meditações, histórias<br />para
+              dormir, playlists e mais
+            </p>
+          </div>
+        </div>
+        <div class="mt-8"></div>
+      </div>
+      <!-- Novo Container -->
+      <div class="text-center mt-28">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Programa transformador de atenção<br />
+          plena
+        </h2>
+        <p class="text-sm text-gray-600 mt-2">
+          Criamos a maior biblioteca de atenção plena do mundo. E é dela que
+          selecionamos os conteúdos que vão ajudar a melhorar o seu bem-estar, a
+          partir dos resultados da sua avaliação.
+        </p>
+      </div>
+      <div class="flex justify-center mt-6 space-x-16">
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 1" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Meditações</p>
+        </div>
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 2" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Artigos</p>
+        </div>
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 3" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Histórias para dormir</p>
+        </div>
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 4" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Sons relaxantes</p>
+        </div>
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 5" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Música</p>
+        </div>
+        <div class="flex items-center">
+          <img src="img/verify.png" alt="Ícone 6" class="w-6 h-6 mr-2" />
+          <p class="text-sm">Inspiração</p>
+        </div>
+      </div>
+      <!-- Novo Container -->
+      <div class="flex flex-col lg:flex-row items-center mt-16">
+        <div class="w-1/2">
+          <img
+            src="img/imagem-celular2.png"
+            alt="Nova Imagem"
+            class="w-full h-auto rounded"
+          />
+        </div>
+        <div class="w-1/2 pl-8">
+          <!-- Alterado de 'pr-8' para 'pl-8' -->
+          <h2 class="text-4xl font-bold text-black mb-4">
+            Seu espaço para tranquilidade
+          </h2>
+          <h3 class="text-2xl font-bold text-purple-600 mb-4">
+            Descubra a serenidade interior
+          </h3>
+          <p class="text-lg text-gray-600 mb-4">
+            Encontre momentos de paz e relaxamento em meio ao caos diário. Nossa
+            plataforma oferece conteúdos cuidadosamente selecionados para ajudar
+            você a recarregar as energias e manter o equilíbrio.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
