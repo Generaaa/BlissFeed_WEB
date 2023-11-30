@@ -19,18 +19,32 @@
           alt="Preguiça Logo"
           class="w-12 h-12"
         />
-        <h1 class="text-2xl font-semibold text-gray-800">BlissFeed</h1>
+        <h1 class="text-2xl font-semibold text-gray-800 logo-title">
+          BlissFeed
+        </h1>
       </div>
       <div class="flex items-center space-x-4">
         <div class="download-button rounded-full p-2">
-          <a href="#" class="text-sm text-white">Baixe aqui</a>
+          <a
+            href="https://play.google.com/store/BlissFeed"
+            target="_blank"
+            class="text-sm text-white"
+            >Baixe aqui</a
+          >
         </div>
-        <a href="#" class="text-sm text-gray-800 mr-4">Sobre Nós</a>
-        <a href="#" class="text-sm text-gray-800">Suporte</a>
+        <a
+          href="#"
+          class="text-sm hover-bg rounded-full p-2 transition-bg duration-300 ease-in-out hover:bg-purple-600"
+          >Sobre Nós</a
+        >
+        <a
+          href="#"
+          class="text-sm hover-bg rounded-full p-2 transition-bg duration-300 ease-in-out hover:bg-purple-600"
+          >Suporte</a
+        >
       </div>
     </header>
     <script>
-      // Adicione um evento de rolagem para a janela
       window.addEventListener("scroll", function () {
         // Obtenha a posição de rolagem da janela
         var scrollPosition = window.scrollY;
@@ -38,9 +52,31 @@
         // Se a posição de rolagem for maior que 0, adicione a classe 'scroll' à topbar
         if (scrollPosition > 0) {
           document.querySelector(".topbar").classList.add("scroll");
+          // Adicione a classe 'white-text' aos links
+          document.querySelectorAll(".topbar a").forEach(function (link) {
+            link.classList.add("white-text");
+          });
         } else {
           // Caso contrário, remova a classe 'scroll'
           document.querySelector(".topbar").classList.remove("scroll");
+          // Remova a classe 'white-text' dos links
+          document.querySelectorAll(".topbar a").forEach(function (link) {
+            link.classList.remove("white-text");
+          });
+        }
+      });
+      window.addEventListener("scroll", function () {
+        // Obtenha a posição de rolagem da janela
+        var scrollPosition = window.scrollY;
+
+        // Se a posição de rolagem for maior que 0, adicione a classe 'scroll' à topbar e título
+        if (scrollPosition > 0) {
+          document.querySelector(".topbar").classList.add("scroll");
+          document.querySelector(".logo-title").classList.add("scroll");
+        } else {
+          // Caso contrário, remova a classe 'scroll'
+          document.querySelector(".topbar").classList.remove("scroll");
+          document.querySelector(".logo-title").classList.remove("scroll");
         }
       });
     </script>
@@ -58,9 +94,13 @@
             meditação de atenção plena. Reduza o estresse, alivie a ansiedade e
             durma melhor.
           </p>
-          <button class="bg-purple-600 text-white py-2 px-4 rounded-full mb-4">
-            Junte-se a nós
-          </button>
+          <a href="https://play.google.com/store/BlissFeed" target="_blank">
+            <button
+              class="bg-purple-600 text-white py-2 px-4 rounded-full mb-4"
+            >
+              Junte-se a nós
+            </button>
+          </a>
           <p class="text-sm text-gray-800">
             Mais de 0 pessoas começaram a testar BlissFeed nos últimos 14 dias
           </p>

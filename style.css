@@ -31,4 +31,39 @@
 }
 .download-button {
   background-color: rgb(147, 51, 234); /* Cor de fundo do botão */
+  opacity: 0.9;
+}
+
+.hover-link:hover {
+  color: #6f42c1; /* Cor purple-600 do Tailwind CSS */
+  opacity: 0.8;
+}
+.download-button,
+.hover-link {
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #6e42c1; /* Azul mais escuro */
+  opacity: 1;
+}
+.hover-bg:hover {
+  background-color: rgb(147, 51, 234); /* Cor purple-600 do Tailwind CSS */
+  opacity: 0.8;
+  color: #fff;
+}
+.transition-bg {
+  transition-property: background, opacity, color;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.hover-bg:not(:hover) a {
+  color: rgb(147, 51, 234); /* Cor text-gray-800 do Tailwind CSS */
+}
+
+.topbar.scroll .logo-title {
+  color: #fff;
 }
